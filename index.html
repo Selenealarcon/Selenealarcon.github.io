@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selene Alarcón</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="w70 m0a row white">
+            <nav>
+                <ul class="m0">
+                    <li><a href="#body">Sobre mi</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="w70 m0a">
+            <div class="white w50" id="title">
+                <h1>Selene Alarcón</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="white banner">
+            <p>Desarrolladora de aplicaciones web</p>
+        </div>
+        <section id="about">
+            <div class="w70 m0a">
+                <article>
+                    <div class="row">
+                        <div class="w60">
+                            <h2>Sobre mi</h2>
+                            <p>
+                                <b>Hola, soy Selene! Desarrolladora web recién graduada!</b> <br />
+                                Recientemente he completado el ciclo superior de Desarrollo de Aplicaciones Web, donde
+                                durante mi formación, trabajé en diversos proyectos que me permitieron profundizar en el
+                                desarrollo de aplicaciones tanto en el frontend como en el backend, lo que me ayudó a
+                                adquirir una base sólida en el diseño y desarrollo de aplicaciones web centradas en la
+                                experiencia del usuario.
+                            </p>
+                        </div>
+                        <div class="w40">
+                            <img src="img/selene.png" alt="Foto de perfil de Selene Alarcón"
+                                title="Perfil de Selene Alarcón" class="m0a">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="estudis">
+            <div class="w70 m0a">
+                <h2>Formación</h2>
+                <div class="row">
+                    <div class="w40">
+                        <div class="carousel-container">
+                            <ul class="row">
+                                <li class="w50 active"><button id="btn-studies"
+                                        onclick="showSection('studies')">Estudios</button></li>
+                                <li class="w50"><button id="btn-experience"
+                                        onclick="showSection('experience')">Experiencia</button></li>
+                            </ul>
+                            <div class="carousel-item active" id="studies">
+                                <article class="inner">
+                                    <span class="row">2022 - 2024</span>
+                                    <h4>Grado Superior Desarrollo de Aplicaciones Web</h4>
+                                    <p>IES Carles Vallbona</p>
+                                </article>
+                                <article class="inner">
+                                    <span class="row">2019 - 2022</span>
+                                    <h4>Grado Medio Sistemas Microinformáticos y Redes</h4>
+                                    <p>IES Thos i Codina</p>
+                                </article>
+                            </div>
+                            <div class="carousel-item" id="experience">
+                                <article class="inner">
+                                    <span class="row">Abril 2024 - Julio 2024</span>
+                                    <h4>Desarrolladora Web de Laravel</h4>
+                                    <p>Virtual Domus</p>
+                                </article>
+                                <article class="inner">
+                                    <span class="row">Octubre 2021 - Abril 2022</span>
+                                    <h4>Técnica de sistemas informáticos</h4>
+                                    <p>Escuela Josep Manuel Peramàs</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w60">
+                        <h3>Habilidades</h3>
+                        <p>Conoce mis habilidades en desarrollo web, donde la creatividad y la técnica se fusionan para
+                            crear soluciones efectivas</p>
+                        <div id="skills-list" class="row">
+                            <article class="w33">
+                                <h4>Frontend</h4>
+                                <div class="inner">
+                                    <ul>
+                                        <li><img src="img/icons/html.svg" alt="Ícono HTML" title="HTML" />
+                                            <p>HTML</p>
+                                        </li>
+                                        <li><img src="img/icons/css.svg" alt="Ícono CSS" title="CSS" />
+                                            <p>CSS</p>
+                                        </li>
+                                        <li><img src="img/icons/javascript.svg" alt="Ícono JavaScript"
+                                                title="JavaScript" />
+                                            <p>JavaScript</p>
+                                        </li>
+                                        <li><img src="img/icons/angular.svg" alt="Ícono Angular" title="Angular" />
+                                            <p>Angular</p>
+                                        </li>
+                                        <li><img src="img/icons/bootstrap.svg" alt="Ícono Bootstrap"
+                                                title="Bootstrap" />
+                                            <p>Bootstrap</p>
+                                        </li>
+                                        <li><img src="img/icons/jquery.svg" alt="Ícono jQuery" title="jQuery" />
+                                            <p>jQuery</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="w33">
+                                <h4>Backend</h4>
+                                <div class="inner">
+                                    <ul>
+                                        <li><img src="img/icons/laravel.svg" alt="Ícono Laravel" title="Laravel" />
+                                            <p>Laravel</p>
+                                        </li>
+                                        <li><img src="img/icons/java.svg" alt="Ícono Java" title="Java" />
+                                            <p>Java</p>
+                                        </li>
+                                        <li><img src="img/icons/mysql.svg" alt="Ícono MySQL" title="MySQL" />
+                                            <p>MySQL</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="w33">
+                                <h4>Herramientas</h4>
+                                <div class="inner">
+                                    <ul>
+                                        <li><img src="img/icons/github.svg" alt="Ícono GitHub" title="GitHub" />
+                                            <p>GitHub</p>
+                                        </li>
+                                        <li><img src="img/icons/vs-code.svg" alt="Ícono Visual Studio Code"
+                                                title="Visual Studio Code" />
+                                            <p>VS Code</p>
+                                        </li>
+                                        <li><img src="img/icons/linux.svg" alt="Ícono Linux" title="Linux" />
+                                            <p>Linux</p>
+                                        </li>
+                                        <li><img src="img/icons/postman.svg" alt="Ícono Postman" title="Postman" />
+                                            <p>Postman</p>
+                                        </li>
+                                        <li><img src="img/icons/figma.svg" alt="Ícono Figma" title="Figma" />
+                                            <p>Figma</p>
+                                        </li>
+                                        <li><img src="img/icons/uml.svg" alt="Ícono UML" title="UML" />
+                                            <p>UML</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="w70 m0a">
+                <h2>Proyectos</h2>
+                <article class="w100">
+                    <div class="row">
+                        <div class="image-container w50">
+                            <div class="carousel" id="carouselPlanahead">
+                                <button class="preview" onclick="changeImg(-1, 'carouselPlanahead')"><img
+                                        src="img/icons/preview.png" alt="Flecha para imagen anterior"
+                                        title="Anterior"></button>
+                                <div class="carousel-imagenes">
+                                    <img src="img/projects/planahead.png" alt="Vista principal del proyecto PlanAhead"
+                                        title="PlanAhead" class="project-img active">
+                                    <img src="img/projects/planahead_login.png"
+                                        alt="Vista de la página de inicio de sesión del proyecto PlanAhead"
+                                        title="Login de PlanAhead" class="project-img">
+                                    <img src="img/projects/planahead_register.png"
+                                        alt="Vista de la página de registro del proyecto PlanAhead"
+                                        title="Registro en PlanAhead" class="project-img">
+                                    <img src="img/projects/planahead_spaces.png"
+                                        alt="Vista del listado de espacios en PlanAhead" title="Espacios en PlanAhead"
+                                        class="project-img">
+                                    <img src="img/projects/planahead_space.png" alt="Vista de un espacio en PlanAhead"
+                                        title="Espacio en PlanAhead" class="project-img">
+                                    <img src="img/projects/planahead_editSpace.png"
+                                        alt="Edición de espacio en PlanAhead" title="Editar espacio en PlanAhead"
+                                        class="project-img">
+                                </div>
+                                <button class="next" onclick="changeImg(1, 'carouselPlanahead')"><img
+                                        src="img/icons/next.png" alt="Flecha para imagen siguiente"
+                                        title="Siguiente"></button>
+                            </div>
+                        </div>
+                        <div class="text-container w50">
+                            <h3><a href="https://github.com/Selenealarcon/PlanAhead">PlanAhead</a></h3>
+                            <p>Desarrollo de una aplicación Laravel que facilita la gestión de tareas y la colaboración
+                                entre usuarios en diversos espacios. Esta plataforma permite crear y personalizar
+                                espacios virtuales donde los usuarios pueden organizar y asignar tareas, optimizando así
+                                la coordinación en contextos como el hogar, la escuela o el trabajo.</p>
+                            <ul>
+                                <li>Laravel</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>jQuery</li>
+                                <li>UML</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="w100">
+                    <div class="row">
+                        <div class="text-container w50">
+                            <h3><a href="https://github.com/Selenealarcon/MyRestaurant">MyRestaurant</a></h3>
+                            <p>Recreación de la web de un restaurante, centrada en lograr un diseño responsivo que se
+                                ajuste de forma automática a distintos dispositivos, proporcionando una experiencia de
+                                usuario óptima en cualquier pantalla.</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                        <div class="image-container w50">
+                            <img src="img/projects/myrestaurant.png"
+                                alt="Vista de la página del proyecto de MyRestaurant" title="MyRestaurant"
+                                class="project-img">
+                        </div>
+                    </div>
+                </article>
+                <article class="w100">
+                    <div class="row">
+                        <div class="image-container w50">
+                            <img src="img/projects/bingo.png" alt="Vista del Bingo ejecutado en consola"
+                                title="Aplicación Bingo en Java" class="project-img">
+                        </div>
+                        <div class="text-container w50">
+                            <h3><a href="https://github.com/Selenealarcon/Bingo-Java">Bingo</a></h3>
+                            <p> Desarrollo de una aplicación de Bingo que simula el tradicional juego en un entorno
+                                digital, ofreciendo a los usuarios la capacidad de generar cartones de forma aleatoria y
+                                jugar en tiempo real. La aplicación se basa en un algoritmo de
+                                generación aleatoria que asegura que cada cartón sea único, utilizando estructuras de
+                                datos eficientes para almacenar y gestionar los números.</p>
+                            <ul>
+                                <li>Java</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="w100">
+                    <div class="row">
+                        <div class="text-container w50">
+                            <h3><a href="https://github.com/Selenealarcon/Spotify">Spotify</a></h3>
+                            <p>Recreación de una réplica de la página de Spotify utilizando HTML y CSS, incorporando
+                                media queries para lograr un diseño responsivo que se adapte a distintos dispositivos.
+                                La estructura incluye una página de inicio de sesión que redirige a la página principal,
+                                donde se presentan diversos podcasts y álbumes. También se ha diseñado una página
+                                dedicada a un álbum específico, mostrando una lista de canciones y detalles del mismo.
+                            </p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                        <div class="image-container w50">
+                            <div class="carousel" id="carouselSpotify">
+                                <button class="preview" onclick="changeImg(-1, 'carouselSpotify')"><img
+                                        src="img/icons/preview.png" alt="Flecha para imagen anterior"
+                                        title="Anterior"></button>
+                                <div class="carousel-imagenes">
+                                    <img src="img/projects/spotifyIndex.png"
+                                        alt="Vista de la página de inicio de la réplica de Spotify"
+                                        title="Página de inicio de Spotify" class="project-img active">
+                                    <img src="img/projects/spotifyMain.png"
+                                        alt="Vista del contenido principal de la réplica de Spotify"
+                                        title="Página princial de Spotify" class="project-img">
+                                    <img src="img/projects/spotifyAncient.png"
+                                        alt="Vista de un álbum de la réplica de Spotify" class="project-img">
+                                </div>
+                                <button class="next" onclick="changeImg(1, 'carouselSpotify')"><img
+                                        src="img/icons/next.png" alt="Flecha para imagen siguiente"
+                                        title="Siguiente"></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="w100">
+                    <div class="row">
+                        <div class="image-container w50">
+                            <img src="img/projects/conecta4.png" alt="Tablero de Conecta 4 en Java"
+                                title="Conecta 4: aplicación en Java" class="project-img">
+                        </div>
+                        <div class="text-container w50">
+                            <h3><a href="https://github.com/Selenealarcon/Conecta-4">Conecta 4</a></h3>
+                            <p>Desarrollo de una aplicación de Conecta 4 que recrea el clásico juego de mesa en un
+                                entorno digital con una interfaz de consola. La aplicación permite que dos jugadores
+                                coloquen fichas en un tablero virtual, verificando automáticamente las condiciones de
+                                victoria (horizontal, vertical y diagonal) y los empates. Un algoritmo aleatorio
+                                determina qué jugador inicia cada partida, garantizando una experiencia dinámica,
+                                mientras que estructuras de datos eficientes gestionan las posiciones de las fichas y el
+                                recuento de victorias.</p>
+                            <ul>
+                                <li>Java</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="row">
+            <div class="inner row m0a">
+                <h2>Contactame</h2>
+                <p>¿Tienes alguna idea o proyecto en el que podamos colaborar? No dudes en contactarme, estaré encantada
+                    de conversar y explorar nuevas oportunidades</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input id="name" class="js-input" type="text" placeholder="Introduce tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo eléctronico</label>
+                        <input id="email" class="js-input" type="email" placeholder="Introduce tu correo eléctronico"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="5" class="js-input" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 Selene Alarcón - Desarrolladora Web</p>
+        <ul>
+            <li><a href="https://github.com/Selenealarcon"><img src="img/icons/github.svg"
+                        alt="Perfil de Github de Selene Alarcón" title="Perfil en Github" class="svg-icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/selene-alarcon/"><img src="img/icons/linkedin.svg"
+                        alt="Perfil de LinkedIn de Selene Alarcón" title="Perfil en Linkedin" class="svg-icon"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
