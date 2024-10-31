@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +60,7 @@ h2 {
     border-bottom: 4px solid #F28444;
     font-size: 3.2em;
     display: inline-block;
+    margin: 0.8em 0;
 }
 
 h4 {
@@ -72,6 +78,8 @@ body {
     font-size: 1.2em;
     color: #353535;
     cursor: default;
+    margin: 0;
+    padding: 0;
 }
 
 section {
@@ -89,6 +97,7 @@ header {
     background-image: url(img/slide.jpeg);
     text-shadow: 1px 1px black;
     background-size: cover;
+    height: 30vh;
 }
 
 header .row {
@@ -123,14 +132,14 @@ div#title {
 div#title h1 {
     font-size: 2.9em;
     line-height: 1em;
-    margin-bottom: 0.4em;
+    margin: 0.6em 0 0.4em 0;
 }
 
 /*BANNER*/
 .banner,
 footer {
     background-color: #353535;
-    padding: 5px;
+    padding: 1em;
     font-weight: bold;
 }
 
@@ -138,7 +147,7 @@ footer {
 #about {
     background-color: #EAF4F4;
     text-align: justify;
-    min-height: 60vh;
+    min-height: 62vh;
     align-content: center;
 }
 
@@ -147,7 +156,7 @@ footer {
 }
 
 #about h2 {
-    margin: 0;
+    margin-bottom: 0.4em;
 }
 
 #about .w40 {
@@ -189,15 +198,16 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0;
+    margin: 1em 0;
 }
 
 #skills-list img {
-    min-width: 2em;
+    max-width: 2.5em;
     height: 100%;
 }
 
 #skills-list ul li {
-    padding: 0.2em;
+    padding: 0.3em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,6 +246,7 @@ footer {
     border: 2px solid #F28444;
     border-radius: 0.5em;
     padding: 0;
+    margin: 1em 0;
 }
 
 .carousel-container ul li button {
@@ -282,6 +293,7 @@ footer {
 #projects {
     margin: 0 auto;
     background-color: #EAF4F4;
+    padding-bottom: 3em;
 }
 
 #projects article {
@@ -316,11 +328,16 @@ footer {
     align-self: center;
 }
 
+#projects h3 {
+    margin: 1em 0;
+}
+
 #projects ul {
     list-style: none;
     display: flex;
     font-size: 0.8em;
     padding: 0;
+    margin: 1em 0;
 }
 
 #projects ul li {
