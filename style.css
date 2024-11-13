@@ -125,11 +125,10 @@ header nav ul li a {
 
 div#title {
     background-color: #00000066;
-    padding: 2em;
+    padding: 2em 0;
     text-transform: uppercase;
     border-radius: 0.5em;
     text-align: left;
-    align-items: flex-start;
     margin: 0.5em auto;
 }
 
@@ -333,6 +332,10 @@ footer {
     left: 0;
 }
 
+.image-container {
+    align-content: center;
+}
+
 .text-container {
     align-self: center;
 }
@@ -391,13 +394,12 @@ footer {
 }
 
 #contact .inner {
-    width: 40%;
     align-items: center;
     flex-direction: column;
 }
 
 #contact p {
-    font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
 #contact-form {
@@ -411,7 +413,7 @@ footer {
 form input[type=submit] {
     background-color: #353535;
     color: white;
-    padding: 0.5em 2.5em;
+    padding: 1.5vh 2.5em;
     border-radius: 0.2em;
     position: relative;
     align-self: flex-start;
@@ -423,6 +425,7 @@ form input[type=submit] {
 form input[type=submit]:hover {
     background-color: #F28444;
     transition: background-color 0.4s ease;
+    font-size: 1em;
 }
 
 input[type=text],
@@ -430,7 +433,7 @@ input[type=email],
 textarea {
     border-width: 0 0 2px 0;
     border-color: #F79977;
-    font-size: 18px;
+    font-size: 1em;
     outline: none;
     padding: 1%;
     background-color: #00000000;
@@ -479,4 +482,48 @@ footer ul {
 .svg-icon:hover {
     filter: none;
     transform: scale(1.5);
+}
+
+@media (min-width: 1200px) and (max-width: 1792px) {
+    body {
+        font-size: 1.1em;
+    }
+
+    div#title h1 {
+        margin: 0.3em 0 0.2em 0;
+    }
+
+    #about img {
+        width: 70%;
+    }
+
+    #skills-list .w33 {
+        width: 100%;
+    }
+
+    #skills-list {
+        flex-direction: column;
+    }
+
+    #skills-list ul {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    #contact .inner {
+        width: 60%;
+    }
+
+    input[type=text],
+    input[type=email] {
+        font-size: 0.9em;
+    }
+
+    textarea {
+        font-size: 1.2em;
+    }
+
+    footer img {
+        width: 2.5vw;
+    }
 }
