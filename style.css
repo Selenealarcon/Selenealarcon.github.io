@@ -69,6 +69,7 @@ h4 {
 
 a {
     text-decoration: none;
+    outline: none;
     color: #353535;
 }
 
@@ -89,7 +90,8 @@ section {
 button {
     border: none;
     cursor: pointer;
-
+    text-decoration: none;
+    
     &:focus {
         outline: none;
     }
@@ -553,7 +555,8 @@ footer ul {
     }
 
     #about {
-        height: 67vh;
+        height: 66vh;
+        align-content: initial;
     }
 
     #about .w40 {
@@ -562,6 +565,21 @@ footer ul {
 
     #about .w60 {
         width: 100%;
+        padding-top: 2em;
+    }
+
+    #about p {
+        margin-bottom: 0;
+    }
+
+    .banner {
+        align-content: center;
+        padding: 0;
+        height: 9vh;
+    }
+
+    #estudis {
+        padding-bottom: 2em;
     }
 
     #estudis>div>div.row {
@@ -598,6 +616,27 @@ footer ul {
 
     #projects .w50 {
         width: 100%;
+    }
+
+    #projects .carousel {
+        width: 100%;
+    }
+
+    #projects .image-container>img {
+        width: 82%;
+    }
+
+    .image-container {
+        order: 2;
+    }
+
+    .text-container {
+        order: 1;
+    }
+
+    .next,
+    .preview {
+        width: 36%;
     }
 
     #contact .w40 {
